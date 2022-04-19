@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #222121;
+}
+
+.box-items h2, .Service h2{
+    font-size: 1.1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    word-spacing: 4px;
+    line-height: 1.1;
+}
+
+i{
+    color: cadetblue;
+}
+
+
+
+
+/* ********************* Header Part start *********************8 */
+
+.header{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgb(0,168,245,0.3), rgb(0,150,230,0.3)), url('./Images/banner1.jpg');
+   background-repeat: no-repeat;
+   clip-path: polygon(50% 0%, 100% 0, 100% 50%, 100% 90%, 79% 80%, 53% 90%, 23% 78%, 0 90%, 0% 35%, 0 0);
+   background-size: 100% 100%;
+   position: relative;
+}
+
+/* pseudo element use */
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3 ;
+    z-index: -1;
+    /* background: linear-gradient(to right, #337ed4 0%, #49fae5 0% , #29c5f0 100%); */
+}
+
+.navbar::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3 ;
+    z-index: -1;
+    background: linear-gradient(to right, #337ed4 0%, #49fae5 0% , #29c5f0 100%);
+
+}
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    position: absolute;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+
+.header-btn a{
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 30px;
+    outline: none;
+    color: #000;
+    line-height: 4;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+} 
+
+.header-btn a:hover{
+    color: #50d1c0;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0 0 10px 0 #8b8181;
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 10px 0;
+    color: #fff;
+}
+/*  */
+
+/* **************** Box part css start ************************** */
+
+.box{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.box-items{
+    background: #fff;
+    border: medium none;
+    padding: 45px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.box-items:hover{
+    box-shadow: 0 0 10px 0 #8b8181;
+    transform: translateY(-20px);
+}
+/* **************** Box part css end************************** */
+
+
+/* ****************** Services part css*********** */
+ 
+.serives{
+    background: #e2e2e9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.container-heading{
+    margin-bottom: 50px;
+}
+
+.container-heading  h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1{
+    color: #474646;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.Service-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress{
+    height: 0.6rem !important;
+    margin-bottom: 25px !important;
+}
+/* ****************** Services part css*********** */
+
+
+/* **************** Pricing part css ********* */
+
+.pricing{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    padding: 40px;
+    margin: 0;
+    /* line-height:1; */
+}
+
+
+.pricing::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background: linear-gradient(160deg, #339dc0 50% ,lightblue 50%  );
+
+}
+
+.cost{
+    font-size: 35px;
+    line-height: 1;
+}
+
+.card{
+    transition: 0.5s;
+}
+
+.card-header{
+    font-weight: bold;
+    font-size: 1rem;
+    background: #e7e4e4!important;
+    padding: 20px 20px !important;
+
+}
+
+.card-body{
+    padding: 30px 0 !important;
+    background: #fff;
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+
+.card-footer{
+    background: #e7e4e4 !important; ;
+}
+
+.card-footer a{
+    border: 1px solid #50d1c0;
+    border-radius: 30px;
+    margin: 0 5px;
+    padding: 20px 30px;
+    outline: none;
+    color:#000;
+    line-height: 4;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+} 
+
+.card-footer a:hover{
+    color:  white;
+    background:#50d1c0;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: translateY( -20px);
+    cursor: pointer;
+}
+
+.card:hover .card-header,.card:hover .cost{
+    color: #50d1c0;
+}
+/* **************** Pricing part css ********* */
+
+/* **************** Customer secton end *************** */
+.clients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.client-box{
+    text-align: center;
+    border: 1px solid rgba(0, 0 , 0 ,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0 , 0 ,0.3);
+    border-radius: 1.5px;
+    transition: 0.3s ;
+}
+
+.client-box:hover{
+    background:#66a098;
+}
+
+.carousel-indicator{
+    position: absolute;
+    right: 0;
+    bottom: -60pc !important;
+}
+
+.carousel-indicator .button{
+    background-color: gray;
+}
+
+.client-box a{
+    position: relative;
+}
+
+.client-box a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.client-box h1{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 10px;
+
+}
+.client-box h2{
+    font-size: 13px;
+    font-weight: 700;
+    color: #6666;
+    margin-bottom: 100px;
+}
+
+
+/* ********* Customer section end******** */
+
+/**************** contact section start************* */
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contact::before{
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 0;
+  bottom:0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(160deg, #29c5f0 50% , #fff 0%);;
+}
+
+.form-btn button{
+    border: 1px solid #50d1c0;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 10px 20px ;
+    outline: none;
+    color:#000;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    background: transparent;
+}
+
+
+form:hover .form-btn button{
+    box-shadow: 0 0 10px 0   #000;
+    transform: translateX(-20%);
+} 
+
+
+/* ******************************** Contact section end *************************************** */
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    padding: 80px 0;
+    background: lightblue;
+    line-height: 2;
+}
+
+.footer-end{
+ text-align: center;
+ padding: 10px;
+}
+
+.footer-end h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.footer-end li a{
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-end a i{
+    color: black;
+    padding: 6px;
+    margin-bottom: 40px;
+}
+
+.form-controls{
+    width: 60%;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer .btn{
+    color: black;
+    background: transparent;
+}
+
+footer .btn:hover{
+    text-align: center;
+    color: #29c5f0;
+    background: white;
+    transform: translateX(-20px);
+    margin-top: 20px;
+}
+
+.Copyright p{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+    text-shadow: 0 0 2px 0 #474646;
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    color: #fff;
+    background: #339dc0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+    background: #000;
+    color:#fff;
+    cursor: pointer;
+}
+
+
+/* ************************************* */
+
+@media (max-width:768px) {
+     .nav-item{
+         text-align: center !important;
+     }
+
+     .pricing{
+         height: auto;
+         margin-top: 50px;
+     }
+
+     .Service-icons{
+        align-items: center;
+    }
+    
+    
+}
+
